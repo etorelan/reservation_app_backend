@@ -45,16 +45,6 @@ djangorestframework-jwt==1.11.0
 djangorestframework-simplejwt==4.5.0
 eip712==0.2.4
 emoji==2.2.0
-eth-account==0.10.0
-eth-brownie==1.20.2
-eth-event==1.2.5
-eth-hash==0.6.0
-eth-keyfile==0.7.0
-eth-keys==0.5.0
-eth-rlp==1.0.1
-eth-typing==3.5.2
-eth-utils==2.3.1
-eth_abi==5.0.0
 exceptiongroup==1.1.0
 execnet==2.0.2
 filelock==3.9.0
