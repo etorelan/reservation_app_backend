@@ -116,3 +116,4 @@ virtualenvwrapper-win==1.2.7
 wcwidth==0.2.6
 wsproto==1.2.0
 zope.interface==5.5.2
+wheel==0.43.0
