@@ -137,9 +137,7 @@ virtualenv==20.17.1
 virtualenv-clone==0.5.7
 virtualenvwrapper-win==1.2.7
 vvm==0.1.0
-vyper==0.3.10
 wcwidth==0.2.13
-web3==6.15.1
 websockets==12.0
 wrapt==1.16.0
 wsproto==1.2.0
