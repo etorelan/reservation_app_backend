@@ -1,4 +1,4 @@
--ip==21.2.4
+ip==21.2.4
 channels-redis==4.2.0
 coverage==7.2.7
 cython==3.0.9
