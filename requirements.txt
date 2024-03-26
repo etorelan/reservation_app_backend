@@ -108,7 +108,6 @@ regex==2023.12.25
 requests==2.31.0
 rlp==4.0.0
 rpds-py==0.18.0
-selenium==4.8.0
 semantic-version==2.10.0
 service-identity==21.1.0
 six==1.16.0
@@ -129,7 +128,7 @@ txaio==23.1.1
 typing_extensions==4.9.0
 tzdata==2022.6
 tzlocal==4.2
-urllib3==2.2.1
+urllib3==1.26.9
 varint==1.0.2
 vine==5.0.0
 virtualenv==20.17.1
