@@ -17,11 +17,15 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from django.http import HttpResponse
 
+def check(request):
+    return HttpResponse({"works": "works"})
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("api/", include("base.api.urls")),
+    path("", check, name="check")
 ]
 
