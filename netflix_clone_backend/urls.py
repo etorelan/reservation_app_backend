@@ -20,7 +20,8 @@ from django.conf.urls.static import static
 from django.http import HttpResponse
 
 def check(request):
-    return HttpResponse({"works": "works"})
+    data = {"works": "works"}
+    return HttpResponse(data)
 
 
 urlpatterns = [
