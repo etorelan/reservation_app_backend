@@ -20,4 +20,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . /app/
 
 # Start Celery worker and Celery beat
-CMD python -m celery -A netflix_clone_backend worker -l info & sleep 20 & python -m celery -A netflix_clone_backend beat -l info & python manage.py runserver 0.0.0.0:8000
+CMD python -m celery -A netflix_clone_backend worker & sleep 20 & python -m celery -A netflix_clone_backend beat & python manage.py runserver 0.0.0.0:8000
