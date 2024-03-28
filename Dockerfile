@@ -8,12 +8,16 @@ ENV PYTHONUNBUFFERED 1
 # Set the working directory in the container
 WORKDIR /app
 
-# Install dependencies
+# Install system dependencies
+RUN apt-get update \
+    && apt-get install -y redis-server
+
+# Install Python dependencies
 COPY requirements.txt /app/
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the current directory contents into the container at /app/
+# Copy the rest of your application code
 COPY . /app/
 
-# Run the Django development server
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+# Start Celery worker and Celery beat
+CMD python -m celery -A netflix_clone_backend worker -l info & python -m celery -A netflix_clone_backend beat -l info & python manage.py runserver 0.0.0.0:8000

@@ -148,8 +148,9 @@ MEDIA_ROOT = BASE_DIR / "media/"
 MEDIA_URL = "/api/"
 
 # Celery settings
-CELERY_BROKER_URL = 'redis://localhost:6379/0'
-CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
+CELERY_BROKER_URL = 'redis://red-co2mvrcf7o1s73cm3npg:6379'
+CELERY_RESULT_BACKEND = 'redis://red-co2mvrcf7o1s73cm3npg:6379'
+# CELERY_RESULT_BACKEND = 'rediss://red-co2mvrcf7o1s73cm3npg:VG014HRsOvTe0mxJwSJXiCTJhsnBlHAT@frankfurt-redis.render.com:6379?ssl_cert_reqs=CERT_REQUIRED'
 
 CELERY_BEAT_SCHEDULE = {
     'delete_pending_rows': {
